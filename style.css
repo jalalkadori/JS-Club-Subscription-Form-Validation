@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
+
 *{
 	padding: 0;
 	margin: 0;
@@ -22,6 +23,7 @@
 .white {
 	width: 65%;
 	height: 100vh;
+	background: #D4D3DC;
 	overflow: hidden;
 }
 
@@ -30,7 +32,7 @@
 .blue {
 	width: 35%;
 	height: 100vh;
-	background: #0081F1;
+	background: #DE0068;
 }
 
 .form-box {
@@ -53,12 +55,16 @@
 }
 
 .form-title {
-	width: 25%;
+	width: 10%;
 	height: 100%;
-	background: #0081F1;
+	background: #DE0068;
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
 }
+
 .form-content {
-	width: 80%;
+	width: 95%;
 	height: 100%;
 	margin-left: -5%;
 	background: #242423;
@@ -90,12 +96,16 @@ form {
 	color: #D4D3DC;
 	font-size: 16px;
 }
+.personal-info input:focus {
+	border-bottom: 1px solid #DE0068;
+}
 .club-info {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
 .club-info input {
 	width: 30%;
 	padding: 15px 10px;
@@ -106,12 +116,19 @@ form {
 	color: #D4D3DC;
 	font-size: 16px;
 }
-
+.club-info input:focus {
+	border-bottom: 1px solid #DE0068;
+}
 .form-content button {
 	width: 100%;
 	padding: 15px 10px;
 	font-size: 20px;
 	border-radius: 5px;
+	color: black;
+}
+.form-content button:hover {
+	background: #DE0068;
+	color: white;
 }
 
 
