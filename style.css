@@ -113,7 +113,7 @@ form {
 	border: none;
 	outline: none;
 	border-bottom: 1px solid #D4D3DC;
-	color: #D4D3DC;
+	color: white;
 	font-size: 16px;
 }
 .club-info input:focus {
@@ -125,6 +125,7 @@ form {
 	font-size: 20px;
 	border-radius: 5px;
 	color: black;
+	background: #D4D3DC;
 }
 .form-content button:hover {
 	background: #DE0068;
