@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Mobile.css">
     <link rel="stylesheet" href="./animation.css">
+    <script src="https://kit.fontawesome.com/6996d94af3.js" crossorigin="anonymous"></script>
     <title>Solicode Subscription Form</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
         <div class="form-box">
             <div class="form-title"></div>
             <div class="form-content">
-                <form action="">
+                <form>
                     <div class="personal-info">
                         <input type="text" id="Nom" placeholder="Nom" required>
                         <input type="text" id="Prenom" placeholder="Prenom" required>
@@ -22,9 +24,35 @@
                         <input type="text" id="Phone" placeholder="Phone" required>
                     </div>
                     <div class="club-info">
-                        <input type="text" id="Genre" placeholder="Genre" required>
-                        <input type="text" id="Group" placeholder="Group" required>
-                        <input type="text" id="Club" placeholder="Club" required>
+                        <div class="radio">
+                            <label for="homme"><i class="fa-sharp fa-solid fa-person"></i></label>
+                            <input type="radio" id="homme">
+                            <label for="femme"><i class="fa-solid fa-person-dress"></i></label>
+                            <input type="radio" id="femme">
+                        </div>
+
+                        <div class="radio">
+                            <h2>Groups :</h2>
+                            <label for="101">101</label>
+                            <input type="radio" id="101">
+                            <label for="102">102</label>    
+                            <input type="radio" id="102">
+                            <label for="103">103</label>
+                            <input type="radio" id="103">
+                            <label for="104">104</label>
+                            <input type="radio" id="104">
+                            <label for="105">105</label>
+                            <input type="radio" id="105">
+                        </div>
+
+                        <div class="radio">
+                            <h2 >Clubs :</h2>
+                            <select name="cars" id="cars">
+                              <option value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                              <option value="opel">Opel</option>
+                            </select>
+                        </div>
                     </div>
                     <div>
                         <button>Subscribe</button>

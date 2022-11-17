@@ -17,21 +17,14 @@
 	height: 100vh;
 	display: flex;
 	flex-direction: row;
-
-	
+	overflow: auto;
 }
 .white {
 	width: 65%;
-	height: 100vh;
 	background: #D4D3DC;
-	overflow: hidden;
 }
-
-/* abackground animation */
-
 .blue {
 	width: 35%;
-	height: 100vh;
 	background: #DE0068;
 }
 
@@ -55,8 +48,7 @@
 }
 
 .form-title {
-	width: 10%;
-	height: 100%;
+	width: 5%;
 	background: #DE0068;
 	display: flex;
 	justify-content: flex-start;
@@ -66,7 +58,6 @@
 .form-content {
 	width: 95%;
 	height: 100%;
-	margin-left: -5%;
 	background: #242423;
 	display: flex;	
 }
@@ -99,6 +90,9 @@ form {
 .personal-info input:focus {
 	border-bottom: 1px solid #DE0068;
 }
+.personal-info input::placeholder {
+	color: white;
+}
 .club-info {
 	display: flex;
 	flex-direction: row;
@@ -107,7 +101,6 @@ form {
 }
 
 .club-info input {
-	width: 30%;
 	padding: 15px 10px;
 	background: none;
 	border: none;
@@ -115,6 +108,16 @@ form {
 	border-bottom: 1px solid #D4D3DC;
 	color: white;
 	font-size: 16px;
+}
+.club-info input::placeholder {
+	color: white;
+}
+.club-info label {
+	color: white;
+}
+.club-info label i{
+	color: white;
+	font-size: 24px;
 }
 .club-info input:focus {
 	border-bottom: 1px solid #DE0068;
@@ -131,5 +134,32 @@ form {
 	background: #DE0068;
 	color: white;
 }
+
+
+.radio {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: flex-end;
+	gap: 10px;
+}
+.radio h2{
+	color: white;
+	font-weight: 300;
+}
+.radio select{
+	background: none;
+	color: white;
+	padding: 10px 25px;
+	border: 1px solid #DE0068;;
+	
+}
+.radio select option{
+	background: none;
+	color: white;
+	
+}
+
 
 
