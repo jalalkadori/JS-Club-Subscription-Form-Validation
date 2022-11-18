@@ -14,13 +14,14 @@
 }
 .container {
 	width: 100%;
-	height: 100vh;
+	height: 120vh;
 	display: flex;
 	flex-direction: row;
 	overflow: auto;
 }
 .white {
 	width: 65%;
+	height: 100%;
 	background: #D4D3DC;
 }
 .blue {
@@ -31,9 +32,8 @@
 .form-box {
 	position: absolute;
 	width: 70%;
-	height: 80vh;
 	left: 15%;
-	top: 10vh;
+	top: 5vh;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
@@ -58,8 +58,9 @@
 .form-content {
 	width: 95%;
 	height: 100%;
+	padding: 50px 0;
 	background: #242423;
-	display: flex;	
+	display: flex;
 }
 form {
 	width: 90%;
@@ -68,6 +69,13 @@ form {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	gap: 25px;
+}
+form h1{
+	text-align: center;
+	color: #D4D3DC;
+	font-size: 56px;
+	font-weight: 500;
 }
 
 .personal-info {
@@ -99,7 +107,6 @@ form {
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-
 .club-info input {
 	padding: 15px 10px;
 	background: none;
@@ -114,6 +121,7 @@ form {
 }
 .club-info label {
 	color: white;
+	font-size: 12px;
 }
 .club-info label i{
 	color: white;
@@ -127,6 +135,8 @@ form {
 	padding: 15px 10px;
 	font-size: 20px;
 	border-radius: 5px;
+	border: none;
+	outline: none;
 	color: black;
 	background: #D4D3DC;
 }
@@ -134,9 +144,7 @@ form {
 	background: #DE0068;
 	color: white;
 }
-
-
-.radio {
+.radio,.gender,.groups,.clubs {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -144,18 +152,17 @@ form {
 	align-content: flex-end;
 	gap: 10px;
 }
-.radio h2{
+h2{
 	color: white;
 	font-weight: 300;
 }
-.radio select{
+.clubs select{
 	background: none;
 	color: white;
 	padding: 10px 25px;
 	border: 1px solid #DE0068;;
-	
 }
-.radio select option{
+.clubs select option{
 	background: none;
 	color: white;
 	

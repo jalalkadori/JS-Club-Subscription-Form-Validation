@@ -16,41 +16,49 @@
         <div class="form-box">
             <div class="form-title"></div>
             <div class="form-content">
+                
                 <form>
+                    <div>
+                        <h1>Solicode Clubs Subscrription</h1>
+                    </div>
                     <div class="personal-info">
-                        <input type="text" id="Nom" placeholder="Nom" required>
-                        <input type="text" id="Prenom" placeholder="Prenom" required>
+                        <input type="text" id="Nom" placeholder="Last Name" max="30" required>
+                        <input type="text" id="Prenom" placeholder="First Name" max="30" required>
                         <input type="text" id="Email" placeholder="Email" required>
                         <input type="text" id="Phone" placeholder="Phone" required>
                     </div>
                     <div class="club-info">
-                        <div class="radio">
+                        <div class="gender">
                             <label for="homme"><i class="fa-sharp fa-solid fa-person"></i></label>
                             <input type="radio" id="homme">
                             <label for="femme"><i class="fa-solid fa-person-dress"></i></label>
                             <input type="radio" id="femme">
                         </div>
 
-                        <div class="radio">
+                        <div class="groups">
                             <h2>Groups :</h2>
-                            <label for="101">101</label>
-                            <input type="radio" id="101">
-                            <label for="102">102</label>    
-                            <input type="radio" id="102">
-                            <label for="103">103</label>
-                            <input type="radio" id="103">
-                            <label for="104">104</label>
-                            <input type="radio" id="104">
-                            <label for="105">105</label>
-                            <input type="radio" id="105">
+                            <div>
+                                <label for="101">DW101</label>
+                                <input type="radio" id="101">
+                                <label for="102">DW102</label>    
+                                <input type="radio" id="102">
+                                <label for="103">DW103</label>
+                                <input type="radio" id="103">
+                                <label for="104">DM101</label>
+                                <input type="radio" id="104">
+                                <label for="105">DM102</label>
+                                <input type="radio" id="105">
+                            </div>
                         </div>
 
-                        <div class="radio">
+                        <div class="clubs">
                             <h2 >Clubs :</h2>
-                            <select name="cars" id="cars">
-                              <option value="volvo">Volvo</option>
-                              <option value="saab">Saab</option>
-                              <option value="opel">Opel</option>
+                            <select name="cars" id="cars" multiple>
+                              <option value="volvo">English</option>
+                              <option value="saab">Robotics</option>
+                              <option value="opel">Theater</option>
+                              <option value="opel">Design</option>
+                              <option value="opel">Photography</option>
                             </select>
                         </div>
                     </div>
