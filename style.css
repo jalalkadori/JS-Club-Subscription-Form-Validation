@@ -95,8 +95,9 @@ form h1{
 	color: #D4D3DC;
 	font-size: 16px;
 }
-.personal-info input:focus {
-	border-bottom: 1px solid #DE0068;
+.personal-info input:focus::placeholder {
+	font-size: 12px;
+	
 }
 .personal-info input::placeholder {
 	color: white;
@@ -116,9 +117,7 @@ form h1{
 	color: white;
 	font-size: 16px;
 }
-.club-info input::placeholder {
-	color: white;
-}
+
 .club-info label {
 	color: white;
 	font-size: 12px;
@@ -126,9 +125,6 @@ form h1{
 .club-info label i{
 	color: white;
 	font-size: 24px;
-}
-.club-info input:focus {
-	border-bottom: 1px solid #DE0068;
 }
 .form-content button {
 	width: 100%;
