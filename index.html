@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./Mobile.css">
     <link rel="stylesheet" href="./animation.css">
     <script src="https://kit.fontawesome.com/6996d94af3.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
     <title>Solicode Subscription Form</title>
 </head>
 <body>
@@ -22,10 +23,22 @@
                         <h1>Solicode Clubs Subscrription</h1>
                     </div>
                     <div class="personal-info">
-                        <input type="text" id="lName" placeholder="Last Name" max="30" required>
-                        <input type="text" id="fName" placeholder="First Name" max="30" required>
-                        <input type="text" id="Email" placeholder="Email" required>
-                        <input type="text" id="Phone" placeholder="Phone" required>
+                        <div>
+                            <span id="lNameOutput"></span><br>
+                            <input type="text" id="lName" placeholder="Last Name" required onchange="LastNameCheck()">
+                        </div>
+                        <div>
+                            <span id="fNameOutput"></span><br>
+                            <input type="text" id="fName" placeholder="First Name" max="30" required onchange="FirstNameCheck()">
+                        </div>
+                        <div>
+                            <span id="emailOutput"></span><br>
+                            <input type="text" id="Email" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <span id="phoneOutput"></span><br>
+                            <input type="text" id="Phone" placeholder="Phone" required>
+                        </div>
                     </div>
                     <div class="club-info">
                         <div class="gender">
@@ -63,7 +76,7 @@
                         </div>
                     </div>
                     <div>
-                        <button>Subscribe</button>
+                        <button onClick="redirect()">Subscribe</button>
                     </div>
                 </form>
             </div>
@@ -73,16 +86,5 @@
             <div class="blue"></div>
         </div>
     </div>
-
-
-    <script>
-        var fName = document.getElementById('fName').value;
-        var lName = document.getElementById('lName').value;
-
-        fName.addEventListener
-
-
-    </script>
-
 </body>
 </html>
