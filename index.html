@@ -19,27 +19,35 @@
             <div class="form-content">
                 
                 <form>
+                    
                     <div>
                         <h1>Solicode Clubs Subscrription</h1>
                     </div>
+
                     <div class="personal-info">
-                        <div>
+
+                        <div class="input-field">
                             <span id="lNameOutput"></span><br>
-                            <input type="text" id="lName" placeholder="Last Name" required onchange="LastNameCheck()">
+                            <input type="text" id="lName" placeholder="Last Name" onkeyup="LastNameCheck()">
                         </div>
-                        <div>
+
+                        <div class="input-field">
                             <span id="fNameOutput"></span><br>
-                            <input type="text" id="fName" placeholder="First Name" max="30" required onchange="FirstNameCheck()">
+                            <input type="text" id="fName" placeholder="First Name" max="30" onkeyup="FirstNameCheck()">
                         </div>
-                        <div>
+
+                        <div class="input-field">
                             <span id="emailOutput"></span><br>
-                            <input type="text" id="Email" placeholder="Email" required>
+                            <input type="text" id="Email" placeholder="Email" onkeyup="emailCheck()">
                         </div>
-                        <div>
+
+                        <div class="input-field">
                             <span id="phoneOutput"></span><br>
-                            <input type="text" id="Phone" placeholder="Phone" required>
+                            <input type="text" id="Phone" placeholder="Phone" onkeyup="numberCheck()">
                         </div>
+
                     </div>
+
                     <div class="club-info">
                         <div class="gender">
                             <label for="homme"><i class="fa-sharp fa-solid fa-person"></i></label>
@@ -66,7 +74,7 @@
 
                         <div class="clubs">
                             <h2 >Clubs :</h2>
-                            <select name="cars" id="cars" multiple>
+                            <select name="cars" id="cars" multiple max>
                               <option value="volvo">English</option>
                               <option value="saab">Robotics</option>
                               <option value="opel">Theater</option>

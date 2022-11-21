@@ -80,10 +80,14 @@ form h1{
 
 .personal-info {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 20px;
+
 }
 .personal-info input {
+	width: 100%;
 	padding: 15px 10px;
 	background: none;
 	border: none;
@@ -92,9 +96,13 @@ form h1{
 	color: #D4D3DC;
 	font-size: 16px;
 }
+.personal-info  .input-field{
+	width: 100%;
+}
 .personal-info span {
-	font-size: 12px;
+	font-size: 16px;
 	color: #DE0068;
+	margin: 25px 0;
 }
 .personal-info input:focus::placeholder {
 	font-size: 12px;
