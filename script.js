@@ -1,5 +1,5 @@
 function redirect() {
-    location.replace('confirmation.html');
+    location.replace('./confirmation.html');
    };
 
 function redirectback() {
@@ -49,12 +49,15 @@ function emailCheck(){
     }
 }
 function numberCheck(){
-    const x = document.getElementById("fName").value;
-    if(x.length < 30 && x.length > 3){
-        document.getElementById("fName").style.border = "1px solid #59CE8F";
-        document.getElementById("fNameOutput").innerHTML = "";
+    const x = document.getElementById("Phone").value;
+    let y = new RegExp('[0-9]','g');
+    if(y.test(x) == true && x.length == 10 && x[0] == 0 && ( x[1] == 5 || x[1] == 6 || x[1] == 7)){
+        
+        document.getElementById("Phone").style.border = "1px solid #59CE8F";
+        document.getElementById("phoneOutput").innerHTML = "";
     } else {
-        document.getElementById("fNameOutput").innerHTML = "* Le nom doit etre moins de 30 charactere";
-        document.getElementById("fName").style.border = "1px solid #DE0068";
+        document.getElementById("phoneOutput").innerHTML = "* Please Entre a valid Phone number";
+        document.getElementById("Phone").style.border = "1px solid #DE0068";
     }
 }
+
