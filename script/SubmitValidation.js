@@ -50,7 +50,7 @@ function Submit() {
     else if(lName.length < 30 && lName.length > 3){
         document.getElementById("lName").style.borderBottom = "1px solid #59CE8F";
         lNameOutput.innerHTML = "";
-        varLastName = true;
+        varLastName === true;
     } else {
         lNameOutput.innerHTML = "*Your Name must be between 3 and 30 characters";
         document.getElementById("lName").style.borderBottom = "1px solid #DE0068";
@@ -65,7 +65,7 @@ function Submit() {
     else if(fName.length < 30 && fName.length > 3){
         document.getElementById("fName").style.borderBottom = "1px solid #59CE8F";
         fNameOutput.innerHTML = "";
-        varFirstName = true;
+        varFirstName === true;
     } else {
         fNameOutput.innerHTML = "* Your Name must be between 3 and 30 characters";
         document.getElementById("fName").style.borderBottom = "1px solid #DE0068";
@@ -76,7 +76,7 @@ function Submit() {
      if(Email == lName+"."+fName+"@ofppt.ma"){
         document.getElementById("Email").style.borderBottom = "1px solid #59CE8F";
         emailOutput.innerHTML = "";
-        varEmail = true;
+        varEmail === true;
     } else {
         emailOutput.innerHTML = "*The Email Must be in this formula : LastName.FirstName@ofppt.ma";
         document.getElementById("Email").style.borderBottom = "1px solid #DE0068";
@@ -88,7 +88,7 @@ function Submit() {
     if(y.test(Phone) == true && Phone.length == 10 && Phone[0] == 0 && ( Phone[1] == 5 || Phone[1] == 6 || Phone[1] == 7)){
         document.getElementById("Phone").style.borderBottom = "1px solid #59CE8F";
         phoneOutput.innerHTML = "";
-        varPhone = true;
+        varPhone === true;
     } else if(Phone.length > 10){
         phoneOutput.innerHTML = "* The Phone number Must containe 10 numbers";
         document.getElementById("Phone").style.borderBottom = "1px solid #DE0068";
@@ -129,20 +129,18 @@ function Submit() {
         if(counter>=1 && counter<=3) {
             clubs.style.borderBottom = "1px solid #59CE8F";
             clubsOutput.innerHTML = "";
-            varClubs = true;
+            varClubs === true;
         } else {
             clubs.style.borderBottom = "1px solid #DE0068";
             clubsOutput.innerHTML = "*3 Clubs Maximum"; 
         }
 
-    if (
-        var varLastName = true;
-        var varFirstName = true;
-        var varEmail = true;
-        var varEmail = true;
-        var varPhone = true;
-        var varClubs = true;
-    ) {
+    if (varLastName === true &&
+        varFirstName === true &&
+        varEmail === true &&
+        varEmail === true &&
+        varPhone === true &&
+        varClubs === true) {
         window.location.href = "confirmation.html";
     }
     
