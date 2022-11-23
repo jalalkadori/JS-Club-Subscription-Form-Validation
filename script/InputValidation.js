@@ -1,9 +1,9 @@
 function redirect() {
-    location.replace('confirmation.html');
+    window.location.href = "confirmation.html";
    };
 
 function redirectback() {
-    location.replace('./index.html');
+    window.location.href = "FormValidationV1.html";
    };
    
 
