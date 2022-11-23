@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/6996d94af3.js" crossorigin="anonymous"></script>
-    <script src="./script/script.js"></script>
-    <title>Solicode Subscription Form</title>
+    <script src="./script/SubmitValidation.js"></script>
+    <title>Solicode Subscription Form V2</title>
 </head>
-<body onload="loading()">
+<body>
 
     <div class="main">
         <div class="form-box">
             <div class="form-title"></div>
             <div class="form-content">
                 
-                <form id="form">
+                <form id="form" onsubmit="return false">
 
                     <div>
                         <h1>Solicode Clubs Subscrription</h1>
@@ -26,25 +26,25 @@
 
                         <div class="input-field">
                             <label for="lName">Last Name</label>
-                            <input type="text" id="lName" onkeyup="LastNameCheck()">
+                            <input type="text" id="lName">
                             <span id="lNameOutput"></span>
                         </div>
 
                         <div class="input-field">
-                            <label for="lName">First Name</label>
-                            <input type="text" id="fName" onkeyup="FirstNameCheck()">
+                            <label for="fName">First Name</label>
+                            <input type="text" id="fName">
                             <span id="fNameOutput"></span>
                         </div>
 
                         <div class="input-field">
-                            <label for="lName">Email Adresse</label>
-                            <input type="text" id="Email" onkeyup="emailCheck()">
+                            <label for="Email">Email Adresse</label>
+                            <input type="text" id="Email">
                             <span id="emailOutput"></span>
                         </div>
 
                         <div class="input-field">
-                            <label for="lName">Phone Number</label>
-                            <input type="text" id="Phone" onkeyup="numberCheck()">
+                            <label for="Phone">Phone Number</label>
+                            <input type="text" id="Phone">
                             <span id="phoneOutput"></span>
                         </div>
 
@@ -54,9 +54,9 @@
                         <div class="gender">
                             <h2>Gender :</h2>
                             <label for="man"><i class="fa-sharp fa-solid fa-person id="MAN"></i></label>
-                            <input type="radio" id="man" name="gender" onChange="genderCheck()">
+                            <input type="radio" id="man" name="gender" >
                             <label for="woman"><i class="fa-solid fa-person-dress" id="WOMAN"></i></label>
-                            <input type="radio" id="woman" name="gender" onChange="genderCheck()">
+                            <input type="radio" id="woman" name="gender">
                             <br>
                             <span id="genderOutput"></span>
                         </div>
@@ -65,15 +65,15 @@
                             <h2>Groups :</h2>
                             <div>
                                 <label for="101">DW 101</label>
-                                <input type="radio" id="Group1" name="group" onChange="groupCheck()">
+                                <input type="radio" id="Group1" name="group">
                                 <label for="102">DW 102</label>    
-                                <input type="radio" id="Group2" name="group" onChange="groupCheck()">
+                                <input type="radio" id="Group2" name="group">
                                 <label for="103">DW 103</label>
-                                <input type="radio" id="Group3" name="group" onChange="groupCheck()">
+                                <input type="radio" id="Group3" name="group">
                                 <label for="104">DM 101</label>
-                                <input type="radio" id="Group4" name="group" onChange="groupCheck()">
+                                <input type="radio" id="Group4" name="group">
                                 <label for="105">DM 102</label>
-                                <input type="radio" id="Group5" name="group" onChange="groupCheck()">
+                                <input type="radio" id="Group5" name="group">
                                 <br>
                                 <span id="groupOutput"></span>
                             </div>
@@ -81,7 +81,7 @@
 
                         <div class="clubs">
                             <h2 >Clubs :</h2>
-                            <select name="cars" id="clubs" multiple onchange="clubsCheck()">
+                            <select name="cars" id="clubs" multiple>
                               <option value="English">- English</option>
                               <option value="Robotics">- Robotics</option>
                               <option value="Theater">- Theater</option>
@@ -93,7 +93,7 @@
                     </div>
                     
                     <div>
-                        <button onClick="redirect()">Subscribe</button>
+                        <button onClick="Submit()">Subscribe</button>
                     </div>
                 </form>
             </div>
