@@ -100,7 +100,7 @@ function Submit() {
 
     // Gender Verification : 
 
-    if(man.cheked || woman.cheked) {
+    if(man.checked || woman.checked) {
         document.querySelector(".gender").style.borderBottom ="1px solid green";
     }
     else {
@@ -110,7 +110,7 @@ function Submit() {
 
     // Group Verification : 
 
-    if(Group1.cheked || Group2.cheked || Group3.cheked || Group4.cheked || Group5.cheked ){
+    if(Group1.checked || Group2.checked || Group3.checked || Group4.checked || Group5.checked ){
         groupOutput.innerHTML = "valide";
         document.querySelector('.clubs').style.borderBottom = "1px solid #DE0068";
     }

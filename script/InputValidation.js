@@ -95,7 +95,7 @@ function genderCheck(){
     let man =  document.getElementById("man");
     let woman =  document.getElementById("woman");
     
-    if(man.cheked === true || woman.cheked === true) {
+    if(man.checked === true || woman.checked === true) {
         document.querySelector(".gender").style.borderBottom ="1px solid green";
     }
     else {
