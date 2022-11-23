@@ -101,7 +101,8 @@ function Submit() {
     // Gender Verification : 
 
     if(man.checked || woman.checked) {
-        document.querySelector(".gender").style.borderBottom ="1px solid green";
+        document.querySelector(".gender").style.borderBottom ="1px solid #59CE8F";
+        genderOutput.innerHTML = "";
     }
     else {
         document.querySelector(".gender").style.borderBottom ="1px solid #DE0068";
@@ -111,14 +112,14 @@ function Submit() {
     // Group Verification : 
 
     if(Group1.checked || Group2.checked || Group3.checked || Group4.checked || Group5.checked ){
-        groupOutput.innerHTML = "valide";
-        document.querySelector('.clubs').style.borderBottom = "1px solid #DE0068";
+        document.querySelector('.groups').style.borderBottom = "1px solid #59CE8F";
+        groupOutput.innerHTML = "";
     }
     else {
         groupOutput.innerHTML = "choose your group Please !";
     }
 
-    // Group Verification : 
+    // Clubs Verification : 
 
     let counter = 0;
         for(let x=0; x< clubs.options.length; x++) {
@@ -127,11 +128,11 @@ function Submit() {
             }
         } 
         if(counter>=1 && counter<=3) {
-            clubs.style.borderBottom = "1px solid #59CE8F";
+            clubs.style.border = "1px solid #59CE8F";
             clubsOutput.innerHTML = "";
             varClubs === true;
         } else {
-            clubs.style.borderBottom = "1px solid #DE0068";
+            clubs.style.border = "1px solid #DE0068";
             clubsOutput.innerHTML = "*3 Clubs Maximum"; 
         }
 
@@ -141,7 +142,8 @@ function Submit() {
         varEmail === true &&
         varPhone === true &&
         varClubs === true) {
-        window.location.href = "confirmation.html";
+
+        window.location.replace("confirmation.html");
     }
     
 }
